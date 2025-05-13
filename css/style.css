@@ -156,22 +156,111 @@
     font-size: 1.3rem;
   }
 
-  button {
-    background-color: #00a86b;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 20px;
-  }
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  animation: subir 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-  button:hover {
-    background-color: #007f50;
-    transform: scale(1.05);
-  }
+.produto-imagem img {
+  max-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.produto-info h2 {
+  font-size: 28px;
+  color: #00a86b;
+  margin-bottom: 10px;
+}
+
+.produto-info p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.produto-info .preco {
+  font-size: 24px;
+  color: #00796b;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.btn-comprar {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00796b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #004d40;
+}
+
+.comparativo {
+  background-color: #eafaf1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.comparativo h2 {
+  font-size: 28px;
+  color: #00a86b;
+  margin-bottom: 30px;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.tabela-comparativa table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tabela-comparativa th,
+.tabela-comparativa td {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.tabela-comparativa th {
+  background-color: #004d40;
+  color: white;
+  text-align: left;
+}
+
+.tabela-comparativa td:first-child {
+  font-weight: bold;
+  color: #00796b;
+}
+
+.tabela-comparativa tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela-comparativa strong {
+  color: #004d40;
+}
 
   footer {
     padding: 20px;
