@@ -293,3 +293,235 @@ header {
   transform: translateY(20px);
 }
 
+.device-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.device-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.on {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status.off {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.app-demo {
+  padding: 60px 30px;
+  background-color: #eafaf1;
+  text-align: center;
+}
+
+.app-demo h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+.app-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.phone-mockup {
+  width: 280px;
+  height: 500px;
+  background: #333;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.screen {
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
+.notification {
+  background: #ffeb3b;
+  color: #000;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.notification.green {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.grafico {
+  max-width: 400px;
+}
+
+.grafico h3 {
+  margin-bottom: 15px;
+}
+
+.barras {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  gap: 8px;
+}
+
+.barra {
+  width: 30px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  font-size: 12px;
+  animation: crescer 1s ease;
+}
+
+@keyframes crescer {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.app-btn.ligar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.app-btn.ligar:hover {
+  background-color: #388e3c;
+}
+
+.app-btn.desligar {
+  background-color: #f44336;
+  color: white;
+}
+
+.app-btn.desligar:hover {
+  background-color: #c62828;
+}
+
+.app-btn.agendar {
+  background-color: #2196f3;
+  color: white;
+}
+
+.app-btn.agendar:hover {
+  background-color: #1565c0;
+}
+
+.agendamento {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.agendamento input[type="time"] {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.device-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.device-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.on {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status.off {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.video-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.video-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.video-frame {
+  display: inline-block;
+  padding: 10px;
+  border: 4px solid #00796b;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
